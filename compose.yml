@@ -1,12 +1,12 @@
 version: "3.8"
-  services:
-    flask-app:
-      image: myapp 
-      ports:
-        - "1111:5000"
-      deploy:
-        replicas: 3
-        restart_policy:
-          condition: on-failure
+services:
+   flask-app:
+     image: myapp 
+     ports:
+       - "1111:5000"
+     deploy:
+       replicas: 3
+       restart_policy:
+         condition: on-failure
 
 
